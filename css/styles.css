@@ -1,0 +1,171 @@
+@font-face{
+	font-family: "Dancing Script";
+	src: url("DancingScript-Regular.otf");
+}
+
+body{
+	font-family: "Dancing Script";
+	background-color: #02010a;
+}
+
+img{
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+header{
+	background-color: #5b7989;
+	text-align: left;
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+	border-radius: 10px 10px 0px 0px;
+	animation: animacion 1s;
+}
+
+@-webkit-keyframes animacion{
+	0%{
+		margin-top: 150%
+	}
+	60%{
+		margin-top: -5%
+	}
+	100%{
+		margin-top: 0%;
+	}
+}
+
+h1{
+	display: inline;
+}
+
+nav{
+	background-color: #5b7989;
+	float: right;
+	display: inline;
+}
+
+a:link, a:visited{
+	color: rgb(255,255,255);
+}
+
+#actual{
+	text-decoration: none !important;
+}
+
+footer{
+	background-color: #C6d5c5;
+	text-align: left;
+	color: black;
+	border-radius: 0px 0px 10px 10px;
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 1 25%;
+	width: 100%;
+}
+
+footer section {
+	width: 25%;
+	flex-flow: row wrap;
+}
+
+#secundaria aside{
+	width: 50%;
+}
+
+#central{
+	text-align: center;
+	background-color: #82c3a6;
+}
+
+#secundaria{
+	text-align: center;
+	background-color: #d5c75f;
+	border: 1px;
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 1 50%;
+}
+
+#img-paisajes:hover{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6 !important;
+	border: 2px; 
+}
+
+#img-retratos:hover{
+	transform: translate(20px, -5px);
+	box-shadow: 2px 2px 2px #82c3a6 !important;
+	border: 2px; 
+}
+
+@media screen and (min-width: 900px){
+	#contenido{
+		width: 900px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 899px){
+	#contenido{
+		width: 100%;
+		margin: auto;
+	}
+
+	section{
+		width: 100%;
+	}
+
+	#secundaria aside{
+		width: 100%;
+	}
+
+	header{
+		width: 100%;
+		text-align: center;
+	}
+
+	nav{
+		width: 100%;
+	}	
+
+	footer{
+		width: 100%;
+		text-align: center;
+	}
+
+	footer section{
+		width: 100%;
+	}
+
+	#fotos figure{
+		width: 100% !important;
+	}
+}
+
+#fotos{
+	text-align: center;
+	background-color: #d5c75f;
+	border: 1px;
+	display: flex;
+	flex-flow: row wrap;
+	flex: 1 1 23%;
+}
+
+#fotos figure{
+	width: 22.8%;
+	padding: 5px;
+}
+
+.par{
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+#foto1{
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+}
+
+#foto3{
+	-webkit-filter: sepia(90%);
+	filter: sepia(90%);
+}
